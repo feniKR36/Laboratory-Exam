@@ -11,6 +11,9 @@ class Inventory:
     def __init__(self):
         self.items = []
     def add_item(self, name, quantity, price):
+        self.item = input("Enter item: ")
+        self.quantity = int(input("Enter quantity: "))
+        self.price = float(input("Enter price: "))
         for item in self.items:
             if item.name() == name():
                 item.update_quantity(quantity)
